@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { ChevronRight, Github, Linkedin, Mail, Menu, X, Twitter } from 'lucide-react'
+import { ChevronRight, Github, Linkedin, Menu, X, Twitter } from 'lucide-react' // Removed Mail import
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -280,49 +280,49 @@ export default function EnhancedPortfolioFooter() {
 
       {/* Footer */}
       <footer className="bg-gray-900 py-12 border-t border-gray-800">
-  <div className="container mx-auto px-4">
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div className="space-y-4">
-        <h3 className="text-xl font-bold text-blue-400">Syed Abdullah Zaidi</h3>
-        <p className="text-gray-400 text-sm">Crafting digital experiences with passion and precision.</p>
-      </div>
-      <div className="space-y-4">
-        <h4 className="text-lg font-semibold text-gray-200">Quick Links</h4>
-        <ul className="space-y-2">
-          <li><a href="#home" className="text-gray-400 hover:text-blue-400 transition-colors">Home</a></li>
-          <li><a href="#about" className="text-gray-400 hover:text-blue-400 transition-colors">About</a></li>
-          <li><a href="#projects" className="text-gray-400 hover:text-blue-400 transition-colors">Projects</a></li>
-          <li><a href="#contact" className="text-gray-400 hover:text-blue-400 transition-colors">Contact</a></li>
-        </ul>
-      </div>
-      <div className="space-y-4">
-        <h4 className="text-lg font-semibold text-gray-200">Contact</h4>
-        <p className="text-gray-400">Email: syedabdullahzaidi@gmail.com</p>
-        <p className="text-gray-400">Phone: +1 (123) 456-7890</p>
-      </div>
-      <div className="space-y-4">
-        <h4 className="text-lg font-semibold text-gray-200">Follow Me</h4>
-        <div className="flex space-x-4">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
-            <Github className="w-6 h-6" />
-            <span className="sr-only">GitHub</span>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
-            <Linkedin className="w-6 h-6" />
-            <span className="sr-only">LinkedIn</span>
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
-            <Twitter className="w-6 h-6" />
-            <span className="sr-only">Twitter</span>
-          </a>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-blue-400">Syed Abdullah Zaidi</h3>
+              <p className="text-gray-400 text-sm">Crafting digital experiences with passion and precision.</p>
+            </div>
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-gray-200">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><a href="#home" className="text-gray-400 hover:text-blue-400 transition-colors">Home</a></li>
+                <li><a href="#about" className="text-gray-400 hover:text-blue-400 transition-colors">About</a></li>
+                <li><a href="#projects" className="text-gray-400 hover:text-blue-400 transition-colors">Projects</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-blue-400 transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-gray-200">Contact</h4>
+              <p className="text-gray-400">Email: syedabdullahzaidi@gmail.com</p>
+              <p className="text-gray-400">Phone: +1 (123) 456-7890</p>
+            </div>
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-gray-200">Follow Me</h4>
+              <div className="flex space-x-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Github className="w-6 h-6" />
+                  <span className="sr-only">GitHub</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Linkedin className="w-6 h-6" />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Twitter className="w-6 h-6" />
+                  <span className="sr-only">Twitter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-gray-800 text-center">
+            <p className="text-gray-400 text-sm">© 2024 SAZ. All rights reserved.</p>
+          </div>
         </div>
-      </div>
-    </div>
-    <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-      <p className="text-gray-400 text-sm">© 2024 SAZ. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+      </footer>
     </div>
   )
 }
