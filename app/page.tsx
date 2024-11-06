@@ -5,8 +5,8 @@ import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ChevronRight, Github, Linkedin, Menu, X, Twitter } from 'lucide-react' // Removed Mail import
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import  Input  from "@/components/ui/input"
+import  Textarea  from "@/components/ui/textarea"
 
 const projects = [
   { title: 'AI-Driven Analytics Dashboard', description: 'A real-time analytics platform powered by machine learning algorithms.', image: '/placeholder.svg?height=300&width=400' },
@@ -122,7 +122,7 @@ export default function EnhancedPortfolioFooter() {
               className="max-w-2xl mb-12 md:mb-0"
             >
               <h2 className="text-5xl sm:text-6xl font-bold mb-6 text-blue-400">Crafting Digital Experiences</h2>
-              <p className="text-xl mb-8 text-gray-300">I'm a full-stack developer passionate about creating innovative and user-centric web solutions.</p>
+              <p className="text-xl mb-8 text-gray-300">I am a full-stack developer passionate about creating innovative and user-centric web solutions.</p>
               <Button
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3"
@@ -169,7 +169,7 @@ export default function EnhancedPortfolioFooter() {
                   from responsive front-end designs to robust back-end architectures.
                 </p>
                 <p className="text-lg text-gray-300">
-                  I'm constantly exploring new technologies and methodologies to stay at the forefront 
+                  I am constantly exploring new technologies and methodologies to stay at the forefront 
                   of the ever-evolving tech landscape. My goal is to deliver solutions that not only meet 
                   but exceed client expectations.
                 </p>
